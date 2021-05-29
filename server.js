@@ -11,10 +11,10 @@ const app = express();
 const port = process.env.PORT || 3535;
 
 var pusher = new Pusher({
-  appId: "1080606",
-  key: "85ec96e085234d39ff47",
-  secret: "7827bdb8409242fc92c0",
-  cluster: "ap1",
+  appId: "your appId",
+  key: "your key",
+  secret: "your secret",
+  cluster: "your cluster",
   encrypted: true,
 });
 
@@ -27,7 +27,7 @@ app.use(cors());
 
 // DB config
 const conn_url =
-  "mongodb+srv://admin:Czk0NJmnjwgkcKnU@cluster0.wzzkh.mongodb.net/whatsapp-mern-clone-db?retryWrites=true&w=majority";
+  "your database connection string uri";
 mongoose.connect(conn_url, {
   useCreateIndex: true,
   useNewUrlParser: true,
